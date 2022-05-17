@@ -1,16 +1,15 @@
 const router = require("express").Router();
-const { AdventureQuest } = require("../../models");
-const auth = require("../../utils/auth");
+const { Projects } = require("../../models");
 
 router.post("/", async (req, res) => {
   try {
-    const aq = await AdventureQuest.create({
+    const project = await Projects.create({
       ...req.body,
     });
 
-    const aqPK = aq.get({ plan: true });
-    console.log(aqPK);
-    res.status(200).json({ pk: aqPK, message: `New AdventureQuest created!` });
+    const projectPK = project.get({ plan: true });
+    console.log(projectPK);
+    res.status(200).json({ pk: projectPK, message: `New Projects created!` });
   } catch (err) {
     res.status(400).json(err);
   }
@@ -18,7 +17,7 @@ router.post("/", async (req, res) => {
 
 router.put("/:id", async (req, res) => {
   try {
-    const updated = await AdventureQuest.update(
+    const updated = await Projects.update(
       {
         ...req.body,
       },
@@ -27,9 +26,7 @@ router.put("/:id", async (req, res) => {
       }
     );
     console.log(updated);
-    res.status(200).json({ aq: updated, message: "aq updated" });
-    // res.json(updated);
-    // console.log(updated);
+    res.status(200).json({ project: updated, message: "project updated" });
   } catch (err) {
     res.status(400).json(err);
   }
@@ -37,8 +34,8 @@ router.put("/:id", async (req, res) => {
 
 router.get("/", async (req, res) => {
   try {
-    const getAdventurerQuests = await AdventureQuest.findAll({});
-    res.json(getAdventurerQuests);
+    const getProjects = await Projects.findAll({});
+    res.json(getProjects);
   } catch (err) {
     res.status(500).json(err);
   }
@@ -46,12 +43,12 @@ router.get("/", async (req, res) => {
 
 router.get("/:id", async (req, res) => {
   try {
-    const getAdventurerQuest = await AdventureQuest.findByPk(req.params.id, {});
-    if (!getAdventurerQuest) {
+    const getProject = await Projects.findByPk(req.params.id, {});
+    if (!getProject) {
       res.status(404).json({ message: "Not found with that id!" });
       return;
     }
-    res.status(200).json(getAdventurerQuest);
+    res.status(200).json(getProject);
   } catch (err) {
     res.status(500).json(err);
   }

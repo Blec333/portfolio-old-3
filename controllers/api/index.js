@@ -1,12 +1,10 @@
 const router = require("express").Router();
-const adventureQuestRoutes = require("./adventureQuestRoutes");
-const adventurerRoutes = require("./adventurerRoutes");
-const questMasterRoutes = require("./questMasterRoutes");
-const questRoutes = require("./questRoutes");
+const projectRoutes = require("./projectsRoutes");
+const interestsRoutes = require("./interestsRoutes");
+const experienceRoutes = require("./experienceRoutes");
 
-router.use("/adventurequest", adventureQuestRoutes);
-router.use("/adventurer", adventurerRoutes);
-router.use("/questmasters", questMasterRoutes);
-router.use("/quests", questRoutes);
+router.use("/projects", projectRoutes);
+router.use("/interests", interestsRoutes);
+router.use("/experience", experienceRoutes);
 
 module.exports = router;
