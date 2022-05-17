@@ -5,7 +5,7 @@ const { Experiences, Interests, Projects } = require("../models");
 
 
 
-router.get("/", auth, async (req, res) => {
+router.get("/", async (req, res) => {
   res.render("portfolio");
 });
 
@@ -51,7 +51,7 @@ router.get("/interests", async (req, res) => {
 
 
 
-// router.get("/experiences", auth, async (req, res) => {
+// router.get("/experiences", async (req, res) => {
 //   res.render("experiences");
 // });
 
