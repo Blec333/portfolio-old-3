@@ -1,36 +1,40 @@
 const router = require("express").Router();
 const { Projects } = require("../../models");
 
+
+
+
+
+
 router.post("/", async (req, res) => {
   try {
     const project = await Projects.create({
       ...req.body,
     });
-
     const projectPK = project.get({ plan: true });
-    console.log(projectPK);
     res.status(200).json({ pk: projectPK, message: `New Projects created!` });
   } catch (err) {
     res.status(400).json(err);
   }
 });
 
+
+
+
 router.put("/:id", async (req, res) => {
   try {
     const updated = await Projects.update(
-      {
-        ...req.body,
-      },
-      {
-        where: { id: req.params.id },
-      }
+      {...req.body,},
+      {where: { id: req.params.id },}
     );
-    console.log(updated);
     res.status(200).json({ project: updated, message: "project updated" });
   } catch (err) {
     res.status(400).json(err);
   }
 });
+
+
+
 
 router.get("/", async (req, res) => {
   try {
@@ -40,6 +44,10 @@ router.get("/", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+
+
+
 
 router.get("/:id", async (req, res) => {
   try {
@@ -53,5 +61,12 @@ router.get("/:id", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+
+
+
+
+
+
 
 module.exports = router;
