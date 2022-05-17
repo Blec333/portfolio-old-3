@@ -1,8 +1,7 @@
-const adv = require("./adv-seeds");
-const cls = require("./clas-seeds");
-const aq = require("./aq-seeds");
-const qm = require("./qm-seeds");
-const qs = require("./quest-seeds");
+const seedExperiences = require("./experiences-seeds");
+const seedInterestes = require("./interests-seeds");
+const seedProjects = require("./projects-seeds");
+const seedEducation = require("./education-seeds");
 
 const sequelize = require("../config/connection");
 
@@ -10,20 +9,17 @@ const seedAll = async () => {
   await sequelize.sync({ force: true });
   console.log("\n----- db SYNCED -----\n");
 
-  await cls();
-  console.log("\n----- classes SEEDED -----\n");
+  await seedExperiences();
+  console.log("\n----- experiences SEEDED -----\n");
 
-  await qm();
-  console.log("\n----- questmasters SEEDED -----\n");
+  await seedInterestes();
+  console.log("\n----- interests SEEDED -----\n");
 
-  await adv();
-  console.log("\n----- adventurers SEEDED -----\n");
+  await seedProjects();
+  console.log("\n----- projects SEEDED -----\n");
 
-  await qs();
-  console.log("\n----- quests SEEDED -----\n");
-
-  await aq();
-  console.log("\n----- adventurequests SEEDED -----\n");
+  await seedEducation();
+  console.log("\n----- projects SEEDED -----\n");
 
   process.exit(0);
 };

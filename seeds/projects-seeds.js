@@ -8,7 +8,7 @@ const projectsData = [
     industry: "Construction",
     size: "Highrise",
     oversightAgency: "City",
-    estimatedValue: "",
+    estimatedValue: 1000000,
   },
   {
     name: "Lane Field South",
@@ -17,7 +17,7 @@ const projectsData = [
     industry: "Construction",
     size: "Highrise",
     oversightAgency: "City",
-    estimatedValue: "",
+    estimatedValue: 1000000,
   },
   {
     name: "Casa De Las Campanas",
@@ -26,7 +26,7 @@ const projectsData = [
     industry: "Construction",
     size: "Midrise",
     oversightAgency: "OSHPD",
-    estimatedValue: "",
+    estimatedValue: 1000000,
   },
   {
     name: "Legacy International Center",
@@ -35,7 +35,7 @@ const projectsData = [
     industry: "Construction",
     size: "Highrise",
     oversightAgency: "City",
-    estimatedValue: "",
+    estimatedValue: 1000000,
   },
   {
     name: "Lilly Labs",
@@ -44,7 +44,7 @@ const projectsData = [
     industry: "Construction",
     size: "Midrise",
     oversightAgency: "City",
-    estimatedValue: "",
+    estimatedValue: 1000000,
   },
   {
     name: "Kaiser Riverside",
@@ -53,7 +53,7 @@ const projectsData = [
     industry: "Construction",
     size: "Highrise",
     oversightAgency: "OSHPD",
-    estimatedValue: "",
+    estimatedValue: 1000000,
   },
   {
     name: "Scripps Cardiovascular Institute",
@@ -62,7 +62,7 @@ const projectsData = [
     industry: "Construction",
     size: "Midrise",
     oversightAgency: "OSHPD",
-    estimatedValue: "",
+    estimatedValue: 1000000,
   },
   {
     name: "Sharp RB MOB",
@@ -71,7 +71,7 @@ const projectsData = [
     industry: "Construction",
     size: "Midrise",
     oversightAgency: "City",
-    estimatedValue: "",
+    estimatedValue: 1000000,
   },
   {
     name: "SDCCD Mesa College Fine Arts",
@@ -80,7 +80,7 @@ const projectsData = [
     industry: "Construction",
     size: "Lowrise",
     oversightAgency: "DSA",
-    estimatedValue: "",
+    estimatedValue: 1000000,
   },
   {
     name: "Wilson Middle School",
@@ -89,7 +89,7 @@ const projectsData = [
     industry: "Construction",
     size: "Midrise",
     oversightAgency: "DSA",
-    estimatedValue: "",
+    estimatedValue: 1000000,
   },
   {
     name: "Central Elemntary School",
@@ -98,7 +98,7 @@ const projectsData = [
     industry: "Construction",
     size: "Lowrise",
     oversightAgency: "DSA",
-    estimatedValue: "",
+    estimatedValue: 1000000,
   },
   {
     name: "Seal Teams 1 & 3 P892 & P964",
@@ -107,7 +107,7 @@ const projectsData = [
     industry: "Construction",
     size: "Lowrise",
     oversightAgency: "NAVFAC",
-    estimatedValue: "",
+    estimatedValue: 1000000,
   },
   {
     name: "P921, P988, P949 & P950",
@@ -116,7 +116,7 @@ const projectsData = [
     industry: "Construction",
     size: "Lowrise",
     oversightAgency: "NAVFAC",
-    estimatedValue: "",
+    estimatedValue: 1000000,
   },
   {
     name: "Cray Ct.",
@@ -125,7 +125,7 @@ const projectsData = [
     industry: "Construction",
     size: "Midrise",
     oversightAgency: "City",
-    estimatedValue: "",
+    estimatedValue: 1000000,
   },
   {
     name: "Oberlin Dr.",
@@ -134,7 +134,7 @@ const projectsData = [
     industry: "Construction",
     size: "Single Story",
     oversightAgency: "City",
-    estimatedValue: "",
+    estimatedValue: 1000000,
   },
   {
     name: "Boardwalk HCP",
@@ -143,7 +143,7 @@ const projectsData = [
     industry: "Construction",
     size: "Highrise Campus - 3 buildings",
     oversightAgency: "City",
-    estimatedValue: "",
+    estimatedValue: 1000000,
   },
   {
     name: "Central Elementary",
@@ -152,7 +152,7 @@ const projectsData = [
     industry: "Construction",
     size: "Lowrise Campus - 8 buildings",
     oversightAgency: "DSA",
-    estimatedValue: "",
+    estimatedValue: 1000000,
   },
   {
     name: "Torrey Pines HS Innovation",
@@ -161,7 +161,7 @@ const projectsData = [
     industry: "Construction",
     size: "Midrise",
     oversightAgency: "DSA",
-    estimatedValue: "",
+    estimatedValue: 1000000,
   },
   {
     name: "Sharp Innovation Education Center",
@@ -170,7 +170,7 @@ const projectsData = [
     industry: "Construction",
     size: "Midrise",
     oversightAgency: "DSA",
-    estimatedValue: "",
+    estimatedValue: 1000000,
   },
 ];
 

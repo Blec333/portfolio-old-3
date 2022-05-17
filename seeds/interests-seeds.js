@@ -1,11 +1,44 @@
-const { AdventureQuest } = require("../models");
+const { Interests } = require("../models");
 
-const aqData = [
+const interestsData = [
   {
-    questId: 1,
-    adventurerId: 1,
+    name: "Spending time with my wife & boys!",
+    type: "Family",
+  },
+  {
+    name: "Building applications",
+    type: "Learning",
+  },
+  {
+    name: "Sheetmetal Craft",
+    type: "Trade",
+  },
+  {
+    name: "Biking",
+    type: "Exercise",
+  },
+  {
+    name: "Swimming - Pool (not ocean)",
+    type: "Exercise",
+  },
+  {
+    name: "Reading about emerging technologies",
+    type: "Learning",
+  },
+  {
+    name: "Pondering the mysteries of the universe",
+    type: "Existentialism",
+  },
+  {
+    name: "Wine & Craft Beer",
+    type: "Indulgences",
   },
 ];
 
-const aqs = () => AdventureQuest.bulkCreate(aqData);
-module.exports = aqs;
+
+
+const seedInterests = () => Interests.bulkCreate(interestsData);
+
+
+
+module.exports = seedInterests;

@@ -50,7 +50,7 @@ const experiencesData = [
     cityState: "Escondido, CA",
     description1: "Maintained current level of emergency medication and firefighting knowledge to mediate on community emergency calls.",
     description2: "Utilized experience and technical knowledge effectively, allowing for enhanced crew capabilities, fire protection, preparedness, planning, organization, diverse background experience, and critical ingenuity metrics.",
-    description3: "Utilized experience and technical knowledge effectively, allowing for enhanced crew capabilities, fire protection, preparedness, planning, organization, diverse background experience, and critical ingenuity metrics.",
+    description3: "Delivered crew supervision, technical expertise, accountability, and knowledge of safe work practices; provided support to Engine Boss to ensure high-quality workflows and directions to crew.",
     description4: "",
     description5: "",
     description6: "",
