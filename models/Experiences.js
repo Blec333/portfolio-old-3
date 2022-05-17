@@ -24,6 +24,10 @@ Experiences.init(
       allowNull: false,
       defaultValue: "Mth/Year - Mth/Year",
     },
+    cityState: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
     description1: {
       type: DataTypes.STRING,
       allowNull: true,
@@ -61,6 +65,26 @@ Experiences.init(
       allowNull: true,
     },
     description10: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    description11: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    description12: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    description13: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    description14: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    description15: {
       type: DataTypes.STRING,
       allowNull: true,
     },

@@ -15,14 +15,29 @@ Projects.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    category: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
     type: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
+    },
+    industry: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    size: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    oversightAgency: {
+      type: DataTypes.STRING,
+      allowNull: true,
     },
     estimatedValue: {
       type: DataTypes.INTEGER,
-      allowNull: false,
-      defaultValue: 15,
+      allowNull: true,
     },
   },
   {
